@@ -8,6 +8,11 @@
   --accent-color: rgb(225, 144, 255);
 }
 
+a {
+  width: 100%;
+  text-decoration: none;
+}
+
 body {
   background-color: #faf9f6;
   color: var(--main-color);
@@ -41,11 +46,11 @@ nav a:hover {
   color: var(--accent-color);
 }
 
-.page-section:nth-child(n+2) {
-  margin-top: 50px;
+.work-section {
+  margin: 100px 0px 250px 0px;
 }
 
-.page-section h2 {
+.work-section h2 {
   margin-bottom: 10px;
 }
 
@@ -83,41 +88,51 @@ nav a:hover {
 
 .work-section article {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
 }
 
 .work-section h3 {
   color: white;
 }
 
-.work-section article:nth-child(1) {
+#spotify {
   grid-area: spotify;
-  background: url(/images/spotify.jpeg);
+  background-image: url(/images/spotify.jpeg);
   background-size: cover;
 }
 
-.work-section article:nth-child(2) {
+#pointer {
   grid-area: pointer;
-  background: url(/images/pointer.jpeg);
+  background-image: url(/images/pointer.jpeg);
   background-size: contain;
 }
 
-.work-section article:nth-child(3) {
+#shyft {
   grid-area: shyft;
-  background: url(/images/shyft.jpeg);
+  background-image: url(/images/shyft.jpeg);
   background-size: cover;
 }
 
-.work-section article:nth-child(4) {
+#shipbob {
   grid-area: shipbob;
-  background: url(/images/shipbob.gif);
+  background-image: url(/images/shipbob.gif);
   background-size: cover;
 }
 
-.work-section article:nth-child(5) {
+#dropbox {
   grid-area: dropbox;
-  background: url(/images/dropbox.jpeg);
+  background-image: url(/images/dropbox.jpeg);
   background-size: cover;
+}
+
+.inner-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(59, 59, 59, 0.692);
+  cursor: pointer;
+}
+
+.inner-section:hover {
+  background-color: rgba(59, 59, 59, 0);
 }
