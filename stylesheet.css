@@ -24,6 +24,14 @@ body {
   padding: 0px 200px;
 }
 
+.section-container {
+  margin: 100px 0px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -46,17 +54,14 @@ nav a:hover {
   color: var(--accent-color);
 }
 
-.work-section {
-  margin: 100px 0px 250px 0px;
+.work-grid-container {
+  margin: 0px 0px 200px 0px;
 }
 
-.work-section h2 {
-  margin-bottom: 10px;
-}
-
-.hero-banner {
+#hero-banner {
   display: flex;
   align-items: center;
+  margin-bottom: -100px;
 }
 
 #hero-title {
@@ -70,11 +75,7 @@ nav a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-#about-wrapper {
-  margin-right: 250px;
-}
-
-.work-section {
+.work-grid-container {
   display: grid;
   gap: 10px;
   height: 100vh;
@@ -86,41 +87,46 @@ nav a:hover {
   "shipbob dropbox";
 }
 
-.work-section article {
+.work-grid-container article {
   width: 100%;
 }
 
-.work-section h3 {
+.work-grid-container h3 {
   color: white;
 }
 
 #spotify {
   grid-area: spotify;
   background-image: url(/images/spotify.jpeg);
+  filter: grayscale(100%);
   background-size: cover;
 }
 
 #pointer {
   grid-area: pointer;
   background-image: url(/images/pointer.jpeg);
+  filter: grayscale(100%);
   background-size: contain;
 }
 
 #shyft {
   grid-area: shyft;
   background-image: url(/images/shyft.jpeg);
+  filter: grayscale(100%);
   background-size: cover;
 }
 
 #shipbob {
   grid-area: shipbob;
   background-image: url(/images/shipbob.gif);
+  filter: grayscale(100%);
   background-size: cover;
 }
 
 #dropbox {
   grid-area: dropbox;
   background-image: url(/images/dropbox.jpeg);
+  filter: grayscale(100%);
   background-size: cover;
 }
 
@@ -135,4 +141,55 @@ nav a:hover {
 
 .inner-section:hover {
   background-color: rgba(59, 59, 59, 0);
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#contact-section {
+  display: flex;
+
+}
+
+.contact-links {
+  font-weight: 900;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.contact-links:hover {
+  color: var(--accent-color);
+}
+
+@media only screen and (max-width: 800px) {
+
+  figure img {
+    position: relative;
+    left: 40px;
+  }
+
+  .container {
+    padding: 0px 50px;
+  }
+
+  #hero-banner {
+    display: block;
+  }
+  #hero-avatar {
+    text-align: center;
+  }
+  #hero-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .work-grid-container {
+    display: block;
+  }
+
+  .work-grid-container article {
+    margin-top: 30px;
+  }
 }
