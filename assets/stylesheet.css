@@ -105,27 +105,27 @@ for accessibility */
 /* Individual CSS Grid element styling */
 #spotify {
   grid-area: spotify;
-  background-image: url(assets/images/spotify.jpeg);
+  background-image: url(images/spotify.jpeg);
 }
 
 #mcdonalds {
   grid-area: mcdonalds;
-  background-image: url(assets/images/mcdonalds.jpeg);
+  background-image: url(images/mcdonalds.jpeg);
 }
 
 #uber-eats {
   grid-area: uber-eats;
-  background-image: url(assets/images/uber-eats.jpeg);
+  background-image: url(images/uber-eats.jpeg);
 }
 
 #airbnb {
   grid-area: airbnb;
-  background-image: url(assets/images/airbnb.png);
+  background-image: url(images/airbnb.png);
 }
 
 #dropbox {
   grid-area: dropbox;
-  background-image: url(assets/images/dropbox.jpeg);
+  background-image: url(images/dropbox.jpeg);
 }
 
 .work-element {
