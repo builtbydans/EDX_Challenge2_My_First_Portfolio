@@ -87,8 +87,8 @@ nav a:hover {
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "spotify spotify"
-  "pointer shyft"
-  "shipbob dropbox";
+  "mcdonalds uber-eats"
+  "airbnb dropbox";
 }
 
 .work-grid-container article {
@@ -106,23 +106,23 @@ nav a:hover {
   background-size: cover;
 }
 
-#pointer {
-  grid-area: pointer;
-  background-image: url(/images/pointer.jpeg);
+#mcdonalds {
+  grid-area: mcdonalds;
+  background-image: url(/images/mcdonalds.jpeg);
   filter: grayscale(100%);
   background-size: contain;
 }
 
-#shyft {
-  grid-area: shyft;
-  background-image: url(/images/shyft.jpeg);
+#uber-eats {
+  grid-area: uber-eats;
+  background-image: url(/images/uber-eats.jpeg);
   filter: grayscale(100%);
   background-size: cover;
 }
 
-#shipbob {
-  grid-area: shipbob;
-  background-image: url(/images/shipbob.gif);
+#airbnb {
+  grid-area: airbnb;
+  background-image: url(/images/airbnb.png);
   filter: grayscale(100%);
   background-size: cover;
 }
