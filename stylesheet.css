@@ -33,7 +33,6 @@ body {
 /* Container class for each section with set padding area */
 .section-container {
   padding-top: 100px;
-  overflow: visible;
 }
 
 /* All section title margins */
@@ -87,7 +86,9 @@ nav a:hover {
 
 /* WORK SECTION -------------------------> */
 
-#work {
+/* Specific container for work to escape <h2> but keep within <section>
+for accessibility */
+#work-container {
   display: grid;
   gap: 10px;
   margin-bottom: 200px;
@@ -130,7 +131,6 @@ nav a:hover {
 .work-element {
   display: flex;
   align-items: center;
-  width: 100%;
   height: 300px;
   background-color: rgba(59, 59, 59, 0.692);
   cursor: pointer;
@@ -140,12 +140,12 @@ nav a:hover {
   background-color: rgba(59, 59, 59, 0);
 }
 
-#work article {
+#work-container article {
   width: 100%;
   background-size: cover;
 }
 
-#work h3 {
+#work-container h3 {
   color: white;
 }
 
@@ -161,6 +161,7 @@ nav a:hover {
 }
 
 .contact-links {
+  margin-top: 25px;
   font-weight: 900;
   color: var(--main-color);
   text-decoration: none;
