@@ -58,8 +58,8 @@ nav a:hover {
   color: var(--accent-color);
 }
 
-.work-grid-container {
-  margin: 0px 0px 200px 0px;
+#work {
+  margin-bottom: 200px;;
 }
 
 #hero-area {
@@ -79,7 +79,7 @@ nav a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-.work-grid-container {
+#work {
   display: grid;
   gap: 10px;
   height: 100vh;
@@ -91,11 +91,11 @@ nav a:hover {
   "airbnb dropbox";
 }
 
-.work-grid-container article {
+#work article {
   width: 100%;
 }
 
-.work-grid-container h3 {
+#work h3 {
   color: white;
 }
 
@@ -191,11 +191,11 @@ footer {
     margin-bottom: 50px;
   }
 
-  .work-grid-container {
+  #work {
     margin-bottom: 300px;
   }
 
-  .work-grid-container article {
+  #work article {
     margin-top: 30px;
   }
 
