@@ -1,8 +1,11 @@
+/*  GLOBAL STYLES -------------------------> */
+
 * {
   margin: 0 auto;
   scroll-behavior: smooth;
 }
 
+/* HTML Root file to define colour schemes */
 :root {
   --main-color: rgb(79, 79, 79);
   --accent-color: rgb(225, 144, 255);
@@ -13,6 +16,8 @@ a {
   text-decoration: none;
 }
 
+/* BODY-SPECIFIC STYLES AND CONTAINERS -------------------------> */
+
 body {
   background-color: #faf9f6;
   color: var(--main-color);
@@ -20,21 +25,23 @@ body {
   max-width: 1200px;
 }
 
+/* Main section container gutters set at certain width */
 .container {
   padding: 0px 200px;
 }
 
+/* Container class for each section with set padding area */
 .section-container {
   padding-top: 100px;
+  overflow: visible;
 }
 
-#contact {
-  padding: 100px 0px;
-}
-
+/* All section title margins */
 .section-title {
   margin-bottom: 20px;
 }
+
+/* HEADER STYLES -------------------------> */
 
 header {
   display: flex;
@@ -58,9 +65,7 @@ nav a:hover {
   color: var(--accent-color);
 }
 
-.work-grid-container {
-  margin: 0px 0px 200px 0px;
-}
+/* HERO AREA -------------------------> */
 
 #hero-area {
   display: flex;
@@ -73,16 +78,21 @@ nav a:hover {
   font-weight: 900;
 }
 
+/* Webkit gradient used for styling of <span> tag */
 #hero-UID {
   background: linear-gradient(30deg, rgb(201, 135, 255) 0%, rgb(199, 103, 255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.work-grid-container {
+/* WORK SECTION -------------------------> */
+
+#work {
   display: grid;
   gap: 10px;
+  margin-bottom: 200px;
   height: 100vh;
+  /* Grid area for Work Section */
   grid-template-rows: 300px 300px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -91,50 +101,33 @@ nav a:hover {
   "airbnb dropbox";
 }
 
-.work-grid-container article {
-  width: 100%;
-}
-
-.work-grid-container h3 {
-  color: white;
-}
-
+/* Individual CSS Grid element styling */
 #spotify {
   grid-area: spotify;
   background-image: url(/images/spotify.jpeg);
-  filter: grayscale(100%);
-  background-size: cover;
 }
 
 #mcdonalds {
   grid-area: mcdonalds;
   background-image: url(/images/mcdonalds.jpeg);
-  filter: grayscale(100%);
-  background-size: contain;
 }
 
 #uber-eats {
   grid-area: uber-eats;
   background-image: url(/images/uber-eats.jpeg);
-  filter: grayscale(100%);
-  background-size: cover;
 }
 
 #airbnb {
   grid-area: airbnb;
   background-image: url(/images/airbnb.png);
-  filter: grayscale(100%);
-  background-size: cover;
 }
 
 #dropbox {
   grid-area: dropbox;
   background-image: url(/images/dropbox.jpeg);
-  filter: grayscale(100%);
-  background-size: cover;
 }
 
-.inner-section {
+.work-element {
   display: flex;
   align-items: center;
   width: 100%;
@@ -143,20 +136,27 @@ nav a:hover {
   cursor: pointer;
 }
 
-.inner-section:hover {
+.work-element:hover {
   background-color: rgba(59, 59, 59, 0);
 }
 
-footer {
-  text-align: center;
-  margin-bottom: 50px;
+#work article {
+  width: 100%;
+  background-size: cover;
 }
+
+#work h3 {
+  color: white;
+}
+
+/* CONTACT SECTION -------------------------> */
 
 #contact {
+  padding: 100px 0px;
   text-align: center;
 }
 
-#contact-section {
+#contact-inner-section {
   display: flex;
 }
 
@@ -170,38 +170,30 @@ footer {
   color: var(--accent-color);
 }
 
+/* FOOTER SECTION -------------------------> */
+
+footer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* MEDIA QUERIES -------------------------> */
+
 
 @media only screen and (max-width: 800px) {
+
+  /* CONTAINERS -----> */
+
+  /* Mobile with set to allow for gutters on responsive screens */
   .container {
     padding: 0px 50px;
-  }
-
-  #contact {
-    padding-top: 50px;
-  }
-
-  #about {
-    padding-top: 50px;
-  }
-
-  #hero-area {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  .work-grid-container {
-    margin-bottom: 300px;
-  }
-
-  .work-grid-container article {
-    margin-top: 30px;
   }
 
   .section-container {
     padding-top: 100px;
   }
+
+  /* HEADER SECTION -----> */
 
   header {
     display: block;
@@ -210,5 +202,36 @@ footer {
 
   nav {
     margin-top: 20px;
+  }
+
+  /* HERO SECTION -----> */
+
+  #hero-area {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  /* ABOUT SECTION -----> */
+
+  #about {
+    padding-top: 50px;
+  }
+
+  /* WORK SECTION -----> */
+
+  #work {
+    margin-bottom: 300px;
+  }
+
+  #work article {
+    margin-top: 30px;
+  }
+
+  /* CONTACT SECTION -----> */
+
+  #contact {
+    padding-top: 50px;
   }
 }
