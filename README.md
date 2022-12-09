@@ -12,7 +12,7 @@ The live project can be found here:
 
 ## Website Mockup
 
-![screenshot-of-image](https://github.com/builtbydans/EDX_Challenge2_My_First_Portfolio/blob/main/images/project-screenshot.png)
+![screenshot-of-image](https://github.com/builtbydans/EDX_Challenge2_My_First_Portfolio/blob/main/assets/images/project-screenshot.png)
 
 ### HTML
 The HTML was revised to include a standardised HTML DOCTYPE, which included all relevant meta tags. All div tags were
